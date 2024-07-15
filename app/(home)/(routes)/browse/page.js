@@ -1,7 +1,12 @@
 import React from "react";
+import CategoryFilter from "../_components/CategoryFilter";
 
 const Browse = () => {
-  return <div>browse</div>;
+  return (
+    <div>
+      <CategoryFilter />
+    </div>
+  );
 };
 
 export default Browse;
