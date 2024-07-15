@@ -20,6 +20,7 @@ const SideBarNav = () => {
       <div className="flex flex-col">
         {menuList.map((item, index) => (
           <div
+            key={index}
             className={`flex gap-2 items-center p-4 px-6 text-gray-500 hover:bg-gray-100 cursor-pointer ${
               activeIndex == index ? "bg-purple-50 text-purple-500" : null
             }`}
