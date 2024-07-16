@@ -1,6 +1,6 @@
 import React from "react";
-import SideBarNav from "./_components/SideBarNav";
-import Header from "./_components/Header";
+import SideBarNav from "../_components/SideBarNav";
+import Header from "../_components/Header";
 
 const homeLayout = ({ children }) => {
   return (
