@@ -41,6 +41,7 @@ export const getCourseById = async (id, userEmail) => {
     description
     name
     free
+    author
     totalChapters
     youtubeUrl
   }

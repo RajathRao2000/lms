@@ -16,6 +16,9 @@ const EnrollmentSection = ({ courseDetail, userCourse }) => {
         if (res) {
           await PublishCourse(res?.createUserEnrollCourse.id).then((result) => {
             console.log(result);
+            if (result) {
+              router.push(`/view-course/${courseDetail.id}`);
+            }
           });
         }
       });
@@ -31,7 +34,10 @@ const EnrollmentSection = ({ courseDetail, userCourse }) => {
             Continue to Build Project, Access Source Code and Track your
             Progress for free!
           </h2>
-          <button className="p-2 w-full bg-purple-500 text-white rounded-lg text-[14px] mt-2 hover:bg-purple-700">
+          <button
+            onClick={() => router.push(`/view-course/${courseDetail.id}`)}
+            className="p-2 w-full bg-purple-500 text-white rounded-lg text-[14px] mt-2 hover:bg-purple-700"
+          >
             Continue
           </button>
         </div>
